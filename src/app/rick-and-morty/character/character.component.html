@@ -1,0 +1,94 @@
+<div class="card md:px-6 lg:px-8">
+
+    <div class="d-flex">
+        <span class="block text-base md:text-6xl font-bold mb-3 mr-3">Characters - </span>
+        <div class="text-base md:text-6xl text-primary font-bold mb-3">Rick and morty</div>
+    </div>
+
+
+    <div class="grid">
+        <div class="col-12 md:col-4 mb-4 px-5" *ngFor="let item of characters">
+            <div class="d-flex justify-content-space-between align-items-center card p-2 card-item">
+
+                <div class="p-3 w-100">
+                    <span class="block text-primary text-2xl font-bold mb-1 hover"> {{ item.name }} </span>
+
+                    <div>
+                        <div *ngIf="item.status == 'Alive'; else isDead">
+                            <span class="d-flex text-xl align-items-center">
+                                <button pButton pRipple type="button" icon="pi pi-circle-fill"
+                                        class="p-button-rounded p-button-success p-button-text p-0"></button>
+                                {{ item.status }}  -  {{ item.species }}
+                            </span>
+
+                        </div>
+                        <ng-template #isDead>
+                            <span class="d-flex align-items-center text-xl font-bold">
+                                <button pButton pRipple type="button" icon="pi pi-circle-fill"
+                                        class="p-button-rounded p-button-danger p-button-text p-0"></button>
+                                {{ item.status }}  -  {{ item.species }}
+                            </span>
+                        </ng-template>
+
+                    </div>
+
+                    <span class="block text-2xl font-medium mb-1">Last known location: </span>
+                    <span class="block text-xl font-medium mb-3 hover"> {{ item.location.name }} </span>
+
+                </div>
+
+                <div class="d-flex align-items-center" (click)="openDialog(item)">
+                    <img [src]="item.image" loading="lazy" alt="Image" class="w-9 md:w-10rem shadow-2 mr-3"
+                         style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%); width: 50%; height: auto">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <p-paginator [rows]="rows()" [totalRecords]="info?.count" (onPageChange)="paginate($event)"></p-paginator>
+</div>
+
+
+<p-dialog [(visible)]="dialog" [style]="{width: '500px' }" [modal]="true" class="p-fluid">
+    <ng-template pTemplate="header">
+        <div class="text-center text-primary w-100 text-2xl font-bold mb-1 hover">
+            {{ character?.name }}
+        </div>
+    </ng-template>
+
+    <ng-template pTemplate="content">
+        <div class="d-flex justify-content-space-between align-items-center p-2">
+
+            <div class="p-3 w-100">
+                <div>
+                    <div *ngIf="character.status == 'Alive'; else isDead">
+                            <span class="d-flex text-xl align-items-center">
+                                <button pButton pRipple type="button" icon="pi pi-circle-fill"
+                                        class="p-button-rounded p-button-success p-button-text p-0"></button>
+                                {{ character.status }}  -  {{ character.species }}
+                            </span>
+
+                    </div>
+                    <ng-template #isDead>
+                            <span class="d-flex align-items-center text-xl font-bold">
+                                <button pButton pRipple type="button" icon="pi pi-circle-fill"
+                                        class="p-button-rounded p-button-danger p-button-text p-0"></button>
+                                {{ character.status }}  -  {{ character.species }}
+                            </span>
+                    </ng-template>
+
+                </div>
+
+                <span class="block text-2xl font-medium mb-1">Last known location: </span>
+                <span class="block text-xl font-medium mb-3 hover"> {{ character.location.name }} </span>
+
+            </div>
+
+            <div class="d-flex align-items-center">
+                <img [src]="character.image" loading="lazy" alt="Image" class="w-9 md:w-10rem shadow-2 mr-3"
+                     style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%); width: 50%; height: auto">
+            </div>
+
+        </div>
+    </ng-template>
+</p-dialog>
