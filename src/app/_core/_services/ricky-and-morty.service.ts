@@ -10,13 +10,34 @@ export class RickyAndMortyService {
   apiUrl
 
   constructor(private http: HttpClient) {
-    this.apiUrl =  environment.apiUrl
+    this.apiUrl = environment.apiUrl;
   }
 
-  public getCharacter(): Observable<any>{
-    return this.http.get(this.apiUrl + '/character')
+  public getCharacter(): Observable<any> {
+    return this.http.get(this.apiUrl + '/character');
   }
-  public getCharacterPerPage(page): Observable<any>{
-    return this.http.get(this.apiUrl + '/character/?page=' + page)
+
+  public getCharacterSimple(page): Observable<any> {
+    return this.http.get(this.apiUrl + '/character/' + page);
+  }
+
+  public getCharacterPerPage(page): Observable<any> {
+    return this.http.get(this.apiUrl + '/character/?page=' + page);
+  }
+
+  public getLocation(): Observable<any> {
+    return this.http.get(this.apiUrl + '/location');
+  }
+
+  public getLocationPerPage(page): Observable<any> {
+    return this.http.get(this.apiUrl + '/location/?page=' + page);
+  }
+
+  public getEpisode(): Observable<any> {
+    return this.http.get(this.apiUrl + '/episode');
+  }
+
+  public getEpisodePerPage(page): Observable<any> {
+    return this.http.get(this.apiUrl + '/episode/?page=' + page);
   }
 }

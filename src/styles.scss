@@ -14,3 +14,7 @@ $gutter: 1rem; //for prime flex grid system
 .logo-light {
   filter: opacity(.10) drop-shadow(0 0 0 white);
 }
+
+.hover:hover {
+  color: rgb(255, 152, 0);
+}

@@ -5,7 +5,7 @@ import { LayoutComponent } from './layout/layout.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'layout/character',
+    redirectTo: 'one-character',
     pathMatch: "full"
   },
   {
@@ -25,6 +25,10 @@ const routes: Routes = [
         loadChildren: () => import('./rick-and-morty/location/location.module').then(m => m.LocationModule)
       },
     ]
+  },
+  {
+    path: 'one-character',
+    loadChildren: () => import('./rick-and-morty/one-character/one-character.module').then(m => m.OneCharacterModule)
   },
   {
     path: 'auth',

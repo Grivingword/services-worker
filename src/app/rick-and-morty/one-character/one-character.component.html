@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="grid">
+    <span class="asset top">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="line"></span>
+    </span>
+        <img class="logo" src="assets/demo/images/rick/logo@2x.png" width="780" alt="">
+        <div class="social">
+            <a>
+                <button class="p-link layout-topbar-button" [routerLink]="'/layout/episode'"
+                        routerLinkActive="active-route">
+                    <i class="pi pi-video"></i>
+                </button>
+            </a>
+            <a>
+                <button class="p-link layout-topbar-button" [routerLink]="'/layout/location'"
+                        routerLinkActive="active-route">
+                    <i class="pi pi-send"></i>
+                </button>
+            </a>
+            <a>
+                <button class="p-link layout-topbar-button" [routerLink]="'/layout/character'"
+                        routerLinkActive="active-route">
+                    <i class="pi pi-id-card"></i>
+                </button>
+            </a>
+        </div>
+        <div class="navigation name" routerLink="/layout/character">
+        </div>
+        <div id="character-name-container" class="character-name-container">
+            <div class="character-name">
+                <h2>{{character?.name}}</h2>
+            </div>
+        </div>
+
+        <div id="character-image-container" class="character-image-container">
+            <img class="character-image" [src]=character?.image [alt]=character?.name>
+        </div>
+        <div class="navigation about">
+        </div>
+
+
+        <div id="character-description-container" class="character-description-container">
+            <div class="character-labels">
+                <h3 class="character-label">Género: {{character?.gender}}</h3>
+                <h3 class="character-label">Especie: {{character?.species}} </h3>
+                <h3 class="character-label">Status: {{character?.status}}</h3>
+            </div>
+        </div>
+        <span class="asset bottom">
+      <span class="line"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </span>
+
+        <div class="learn-more" [routerLink]="'/layout/character'">
+            <span>Ver mas...</span>
+        </div>
+
+        <div class="arrow" id="load-next" (click)="init()"></div>
+
+    </div>
+</div>

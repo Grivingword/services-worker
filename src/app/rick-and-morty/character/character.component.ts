@@ -24,7 +24,6 @@ export class CharacterComponent implements OnInit {
         this.rickyService.getCharacter().subscribe((res) => {
             this.characters = res.results;
             this.info = res.info;
-            console.log(res);
         });
     }
 
@@ -40,7 +39,6 @@ export class CharacterComponent implements OnInit {
         this.rickyService.getCharacterPerPage(page).subscribe((res) => {
             this.characters = res.results;
             this.info = res.info;
-            console.log(res);
         });
     }
 
