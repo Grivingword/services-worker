@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1662864580113,
+  "timestamp": 1662865173431,
   "index": "https://grivingword.github.io/services-worker/index.html",
   "assetGroups": [
     {
@@ -19,7 +19,7 @@
         "https://grivingword.github.io/services-worker/58.47e8bc21cc4f793b.js",
         "https://grivingword.github.io/services-worker/595.7151115617bbfeb7.js",
         "https://grivingword.github.io/services-worker/752.d77d8a66f44df1c9.js",
-        "https://grivingword.github.io/services-worker/791.1c7ceacc8635004d.js",
+        "https://grivingword.github.io/services-worker/791.836e113e1d4a2f15.js",
         "https://grivingword.github.io/services-worker/797.284e491e82f53d73.js",
         "https://grivingword.github.io/services-worker/916.20f03e80abe48434.js",
         "https://grivingword.github.io/services-worker/common.b165a9d3e67677a0.js",
@@ -28,7 +28,7 @@
         "https://grivingword.github.io/services-worker/main.14cace5db9a717a4.js",
         "https://grivingword.github.io/services-worker/manifest.webmanifest",
         "https://grivingword.github.io/services-worker/polyfills.6e3503a2db820391.js",
-        "https://grivingword.github.io/services-worker/runtime.de63fd72e2e00367.js",
+        "https://grivingword.github.io/services-worker/runtime.cc872d90f305445f.js",
         "https://grivingword.github.io/services-worker/styles.8ac08005b7193ee9.css"
       ],
       "patterns": []
@@ -816,7 +816,7 @@
     "https://grivingword.github.io/services-worker/58.47e8bc21cc4f793b.js": "d332d6aad4d6ceddc6cf994b2dc1803e28a99aa7",
     "https://grivingword.github.io/services-worker/595.7151115617bbfeb7.js": "5510af6df7590f15a9d79c27dcd6ad7d472e95b4",
     "https://grivingword.github.io/services-worker/752.d77d8a66f44df1c9.js": "26edf17a30d3ee8940c0583eeffb72fa35a6ca40",
-    "https://grivingword.github.io/services-worker/791.1c7ceacc8635004d.js": "ad46db3548306a4a8c557da6d45511de5c1bc142",
+    "https://grivingword.github.io/services-worker/791.836e113e1d4a2f15.js": "4fd111be77c33a96069792c46cc4a0ecfbafe27b",
     "https://grivingword.github.io/services-worker/797.284e491e82f53d73.js": "61c8eaa99ee277b26dd1c689141c769b13aaa3bf",
     "https://grivingword.github.io/services-worker/916.20f03e80abe48434.js": "8e8a68cff6e2e83c256272d00ae239070994769c",
     "https://grivingword.github.io/services-worker/arrow.cbcbf7d340aaa3a1.svg": "00722bcf8c0daf480daf8919ad97960867326bbf",
@@ -1578,7 +1578,7 @@
     "https://grivingword.github.io/services-worker/common.b165a9d3e67677a0.js": "d73439c0ac147f3be007fa9852d89c496aedb131",
     "https://grivingword.github.io/services-worker/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
     "https://grivingword.github.io/services-worker/hue.8b1818380241e6ac.png": "f81ae627637a684614aa726e206c73ce099a01fd",
-    "https://grivingword.github.io/services-worker/index.html": "28c3f88cf485ec02973ccc0bdf8d2b31520d3fcc",
+    "https://grivingword.github.io/services-worker/index.html": "50e012e2657d6a05659ff6298726a4c19f2623f3",
     "https://grivingword.github.io/services-worker/learn-more.1c2163bc50928589.svg": "c96af022126db1083a49eb294fe994b93355c936",
     "https://grivingword.github.io/services-worker/main.14cace5db9a717a4.js": "4ffdedac115509941f432bfc0e48db987b18f96c",
     "https://grivingword.github.io/services-worker/manifest.webmanifest": "97c5040cf14cfc429ecd086138bb29a1efc83e00",
@@ -1586,7 +1586,7 @@
     "https://grivingword.github.io/services-worker/primeicons.29151a741d66863a.woff": "21e477ea19e15b66344bcc23b3fbb2161092a707",
     "https://grivingword.github.io/services-worker/primeicons.5f5d08cd089b4e5d.ttf": "e6c86ca90a9fb4282fb35523d56fde00e78a1416",
     "https://grivingword.github.io/services-worker/primeicons.76044b1c189cc4d7.svg": "621775b2ec555fd2dd152a24390cf6dfeee168b1",
-    "https://grivingword.github.io/services-worker/runtime.de63fd72e2e00367.js": "6aee33823287635a579bc4be6ce54d35705d0776",
+    "https://grivingword.github.io/services-worker/runtime.cc872d90f305445f.js": "555181908001e60688603f9f282fa890d72ee057",
     "https://grivingword.github.io/services-worker/styles.8ac08005b7193ee9.css": "ba5c3217d9e2fb9ec4dda80ba625f6c4427589aa"
   },
   "navigationUrls": [
